@@ -11,7 +11,7 @@
 - Kexts: AppleALC, BrcmBluetoothInjector, BrcmPatchRAM3, IntelMausi, Lilu, WhatEverGreen, VirtualSMC, SMCBatteryManagement, SMCProcessor, SMCSuperIO, VoodooInput, VoodooPS2Controller. 
 ## What's working (as I have tested so far)
 - Intel HD Graphics 4000 w/ QE-CI.
-- Sound output and intergrated microphone (``alcid=28``).
+- Speaker, headphone jack output and intergrated microphone (``alcid=28``).
 - Keyboard.
 - Backlight control via ``Fn-F8/F9``.
 - TrackPoint and TrackPoint buttons.
