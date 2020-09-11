@@ -1,5 +1,5 @@
 # Thinkpad T430s Hackintosh with OpenCore 0.6.1
-[./Resources/cover.png]()
+![](./Resources/cover.png)
 ## My hardware specs
 - CPU: Intel Core i5-3320M.
 - RAM: 8 GB.
