@@ -27,11 +27,12 @@
 ## Not tested
 - DisplayPort output (shown in Hackintool).
 - Intergrated camera (it's broken on my laptop).
-
-## Credit
-- OpenCore, macOS and other tools' developer team.
-- This DSDT patching guide for T430s: https://www.tonymacx86.com/threads/guide-lenovo-thinkpad-t430-clover.229576/
+- Sleep/wake.
 ## Changelog
 ```
 11-Sep-2020: initial build
 ```
+## Special thanks
+- OpenCore, macOS and other tools' developer team.
+- This DSDT patching guide for T430s: https://www.tonymacx86.com/threads/guide-lenovo-thinkpad-t430-clover.229576/
+
