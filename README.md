@@ -34,5 +34,6 @@
 ```
 ## Special thanks
 - OpenCore, macOS and other tools' developer team.
+- Dortania's vanilla guide.
 - This DSDT patching guide for T430s: https://www.tonymacx86.com/threads/guide-lenovo-thinkpad-t430-clover.229576/
 
