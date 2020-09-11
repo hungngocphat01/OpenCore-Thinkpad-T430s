@@ -995,7 +995,7 @@
 			<key>AdviseWindows</key>
 			<false/>
 			<key>MLB</key>
-			<string>C02346500J9F16PA8</string>
+			<string>GENERATE YOUR OWN</string>
 			<key>ROM</key>
 			<data>ESIzAAAA</data>
 			<key>SpoofVendor</key>
@@ -1003,9 +1003,9 @@
 			<key>SystemProductName</key>
 			<string>MacBookPro10,2</string>
 			<key>SystemSerialNumber</key>
-			<string>C02LP8Y6G4N7</string>
+			<string>GENERATE YOUR OWN</string>
 			<key>SystemUUID</key>
-			<string>534E42B7-44FB-464B-87B9-3D85A8B02871</string>
+			<string>GENERATE YOUR OWN</string>
 		</dict>
 		<key>UpdateDataHub</key>
 		<true/>
