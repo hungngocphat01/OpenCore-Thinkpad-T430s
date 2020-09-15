@@ -1,5 +1,5 @@
 # Thinkpad T430s Hackintosh with OpenCore 0.6.1
-![](./Resources/cover.png)
+![](./screenshot.png)
 
 So I think maybe this is the first OC folder for our Thinkpad T430s. I have tried several different macOS versions and premade EFIs, but in my opinion this one which I made is the most compatible one for Mojave 10.14.6, at least on my own machine.
 
