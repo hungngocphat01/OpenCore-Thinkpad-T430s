@@ -28,7 +28,7 @@ I don't guarantee that this config will work great on your machine, so it is hig
 - Intergrated Wifi and Bluetooth.
 - Touchpad lower buttons.
 - VGA output.
-- Hard disk LED (it turns on forever, no blinking, etc.).
+- ~~Hard disk LED (it turns on forever, no blinking, etc.).~~
 ## Not tested
 - DisplayPort output (shown in Hackintool but not tested).
 - Intergrated camera (it's broken on my laptop).
