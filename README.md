@@ -24,6 +24,7 @@ You will have to generate your own serial number, motherboard serial, system UUI
 - Keyboard.
 - Backlight control via ``Fn-F8/F9``.
 - TrackPoint and TrackPoint buttons.
+- Wifi via TPLink TL-WN725N. Kexts and utilities provided by chris1111.
 - Battery status.
 - USB ports.
 - Sleep.
