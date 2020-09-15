@@ -42,14 +42,14 @@ You will have to generate your own serial number, motherboard serial, system UUI
 - Dump and patch your own ``DSDT.aml`` as guided [here](https://www.tonymacx86.com/threads/guide-lenovo-thinkpad-t430-clover.229576/). Replace the prebuilt ``DSDT.aml`` in ``OC/ACPI`` with yours.
 - Follow Dortania's guide on Ivy Bridge power management fix [here](https://dortania.github.io/OpenCore-Post-Install/universal/pm.html#sandy-and-ivy-bridge-power-management). Replace the prebuilt ``SSDT-PM.aml`` in ``OC/ACPI`` with yours (the default name of the generated SSDT is ``ssdt.aml``, you'll need to rename it to ``SSDT-PM.aml``).
 - Enable ``USBInjectAll.kext`` in ``config.plist`` and use Hackintool.app to generate your own ``USBPorts.kext``, ``SSDT-EC-USB.aml`` and ``SSDT-UIAC.aml`` (plenty of guides about this are available on Google). Put your ``USBPorts.kext`` to ``OC/Kexts`` and the SSDTs into ``OC/ACPI``. Finally disable ``USBInjecAll.kext`` like the way you enabled it.
-- Run these commands in a terminal to for better sleeping:
-```
-sudo pmset -a hibernatemode 0
-sudo pmset autopoweroff 0 
-sudo pmset powernap 0 
-sudo pmset standby 0
-sudo pmset proximitywake 0
-```
+- Run these commands in a terminal for better sleeping compability:
+  ```
+  sudo pmset -a hibernatemode 0
+  sudo pmset autopoweroff 0 
+  sudo pmset powernap 0 
+  sudo pmset standby 0
+  sudo pmset proximitywake 0
+  ```
 - If you have an extra HDD installed in your DVD slot (via a caddybay), you'll need to replace your ``AppleAHCIPort.kext`` with the older one which I provided in the Extra folder in this repo (grabbed from InsanelyMac) to have your HDD recognized in macOS.
   - Make a backup of your current ``/S/L/E/AppleAHCIPort.kext``.
   - Copy the provided kext into ``/S/L/E``. Remember to correct its permissions then finally perform a kextcache update.
