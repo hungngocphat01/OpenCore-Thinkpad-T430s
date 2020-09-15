@@ -1,7 +1,12 @@
 # Thinkpad T430s Hackintosh with OpenCore 0.6.1
 ![](./Resources/cover.png)
+
 So I think maybe this is the first OC folder for our Thinkpad T430s. I have tried several different macOS versions and premade EFIs, but in my opinion this one which I made is the most compatible one for Mojave 10.14.6, at least on my own machine.
+
 I don't guarantee that this config will work great on your machine, so it is highly recommended to use this repository for reference only.
+
+You will have to generate your own serial number, motherboard serial, system UUID, etc.
+
 ## My hardware specs
 - CPU: Intel Core i5-3320M.
 - RAM: 8 GB.
