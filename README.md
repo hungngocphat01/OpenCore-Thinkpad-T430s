@@ -38,7 +38,8 @@ You will have to generate your own serial number, motherboard serial, system UUI
 ## Not tested
 - DisplayPort output (shown in Hackintool but not tested).
 - Intergrated camera (it's broken on my laptop).
-## Generate your own DSDT/SSDT for better compability.
+## Improving compability
+- This OC configuration is not guaranteed to work on your machine out of the box. If so, follow below guides on DSDT/SSDT patching for better compability.
 - Dump and patch your own ``DSDT.aml`` as guided [here](https://www.tonymacx86.com/threads/guide-lenovo-thinkpad-t430-clover.229576/). Replace the prebuilt ``DSDT.aml`` in ``OC/ACPI`` with yours.
 - Follow Dortania's guide on Ivy Bridge power management fix [here](https://dortania.github.io/OpenCore-Post-Install/universal/pm.html#sandy-and-ivy-bridge-power-management). Replace the prebuilt ``SSDT-PM.aml`` in ``OC/ACPI`` with yours (the default name of the generated SSDT is ``ssdt.aml``, you'll need to rename it to ``SSDT-PM.aml``).
 - Enable ``USBInjectAll.kext`` in ``config.plist`` and use Hackintool.app to generate your own ``USBPorts.kext``, ``SSDT-EC-USB.aml`` and ``SSDT-UIAC.aml`` (plenty of guides about this are available on Google). Put your ``USBPorts.kext`` to ``OC/Kexts`` and the SSDTs into ``OC/ACPI``. Finally disable ``USBInjecAll.kext`` like the way you enabled it.
@@ -50,10 +51,10 @@ You will have to generate your own serial number, motherboard serial, system UUI
   sudo pmset standby 0
   sudo pmset proximitywake 0
   ```
-- If you have an extra HDD installed in your DVD slot (via a caddybay), you'll need to replace your ``AppleAHCIPort.kext`` with the older one which I provided in the Extra folder in this repo (grabbed from InsanelyMac) to have your HDD recognized in macOS.
-  - Make a backup of your current ``/S/L/E/AppleAHCIPort.kext``.
-  - Copy the provided kext into ``/S/L/E``. Remember to correct its permissions then finally perform a kextcache update.
-  - You should put the disk on which you installed macOS in the default 2.5" slot rather than the DVD slot.
+- If you have an extra HDD installed in your DVD slot (via a caddybay), you'll need to replace your ``AppleAHCIPort.kext`` with the older one which I provided in the ``Extra`` folder in this repo (courtesy of fusion71au at [InsanelyMac](https://www.insanelymac.com/forum/files/file/815-appleahciportkext/)) to have your HDD recognized in macOS.
+  - Make a backup of your current ``/S/L/E/AppleAHCIPort.kext`` then delete it.
+  - Copy the provided kext into ``/S/L/E``. Remember to correct its permissions and perform a kextcache update.
+  - You should put the disk on which you installed macOS in the default 2.5" slot rather than in the DVD slot.
 ## Changelog
 ```
 11-Sep-2020: initial build
